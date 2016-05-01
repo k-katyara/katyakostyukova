@@ -1,112 +1,296 @@
-
-<!DOCTYPE html>
-<html ng-app="app" lang="en"></html>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <title>The Montues</title>
-  <script src="https://use.typekit.net/ruc7ten.js"></script>
-  <script type="text/javascript">try{Typekit.load({ async: true });}catch(e){}</script>
-  <link rel="stylesheet" href="/css/styles.min.css">
-  <script src="/js/app.js"></script>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Katya Kostyukova</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x3.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
-<body ng-controller="MainController">
-  <div class="authenticate"><a href="/request/connect">Sign in</a>
-  </div>
-  <div ng-init="showConnect = false" ng-class="{'show-connect': showConnect}" class="wrap landing">
-    <div class="aside">
-      <div class="aside-fixed">
-        <div class="logo"></div>
-        <div class="divider">The Non <span>––</span> Conference</div><a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-black request">Request Invite</a><a ng-click="showConnect = !showConnect" ng-class="{'show-connect': showConnect}" class="btn btn-lg btn-white request">Request Invite</a>
-        <div ng-class="{'show-connect': showConnect}" class="rad-humans">
-          <div slide-in="{start: '#ben', end: '#marc'}" class="rad-human ben"></div>
-          <div slide-in="{start: '#marc', end: '#ryan_veronica'}" class="rad-human marc"></div>
-          <div slide-in="{start: '#ryan_veronica', end: '#helena'}" class="rad-human wide ryan_veronica"></div>
-          <div slide-in="{start: '#helena', end: '#dan'}" class="rad-human helena"></div>
-          <div slide-in="{start: '#dan', end: '#enrique'}" class="rad-human dan"></div>
-          <div slide-in="{start: '#enrique', end: '#geoff'}" class="rad-human enrique"></div>
-          <div slide-in="{start: '#geoff', end: '#mikael_steph'}" class="rad-human geoff"></div>
-          <div slide-in="{start: '#mikael_steph', end: '#airbnb'}" class="rad-human mikael_steph"></div>
-          <div slide-in="{start: '#airbnb', end: '#talent'}" class="rad-human airbnb"></div>
-          <div slide-in="{start: '#talent', end: '#dann'}" class="rad-human talent"></div>
-          <div slide-in="{start: '#dann', end: '#info'}" class="rad-human dann"></div>
+<body>
+	<section class="banner" role="banner">
+        <header id="header">
+            <div class="header-content clearfix">
+                <a class="logo" href="#"><img src="images/logo.png" alt=""></a>
+                <nav class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#recent work">Recent Work</a></li>
+                        <li><a href="#b-sides">B-sides</a></li>
+                        <li><a href="#prior work">Prior Work</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="nav-toggle">Menu<span></span></a>
+            </div><!-- header content -->
+        </header><!-- header -->
+        <div class="container">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="banner-text text-center">
+                    <h1>Katya Kostyukova</h1>
+                    <p>Product Designer</p>
+                </div>
+            </div>
+           </div>
+    </section>
+
+
+    <section id="recent work" class="works section no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-1.jpg" class="work-box">
+                        <img src="images/work-1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Emergent VR</h5>
+                                <p>Gear VR Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-2.jpg" class="work-box">
+                        <img src="images/work-2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Emergent VR</h5>
+                                <p>Android Mobile UI</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-3.jpg" class="work-box">
+                        <img src="images/work-3.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Emergent VR</h5>
+                                <p>Logo & Branding</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-4.jpg" class="work-box">
+                        <img src="images/work-4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>WeTravel</h5>
+                                <p>Landing Page Design</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-5.jpg" class="work-box">
+                        <img src="images/work-5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>WeTravel</h5>
+                                <p>Trip Creation Tool Redesign</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-6.jpg" class="work-box">
+                        <img src="images/work-6.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>WeTravel</h5>
+                                <p>Visual Design Styleguide</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-7.jpg" class="work-box">
+                        <img src="images/work-7.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Geopogo</h5>
+                                <p>Web Browser AR</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/work-8.jpg" class="work-box">
+                        <img src="images/work-8.jpg" alt="">
+                        <div class="overlay">
+                            <div class="overlay-caption">
+                                <h5>Captivate Real Estate</h5>
+                                <p>User Research & Product Strategy</p>
+                            </div>
+                        </div><!-- overlay -->
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
-      <div ng-class="{'show-connect': showConnect}" slide-in="{start: '#intro_end', end: '#info'}" class="aside-bg"></div>
-      <div ng-class="{'show-connect': showConnect}" class="connect-form">
-        <p> <strong>First, sign in below with one of the following:<br /></strong><span>This will allow us to quickly gather information about you like your name, email, location, and avatar.</span></p><a href="/auth/facebook" class="btn btn-lg btn-black connect">Facebook</a><a href="/auth/twitter" class="btn btn-lg btn-black connect">Twitter</a><a ng-click="showConnect = !showConnect" class="btn btn-lg btn-lightgray close">&times;</a>
-      </div>
-    </div>
-    <div ng-class="{'show-connect': showConnect}" class="main connect">
-      <h2 class="push-bottom"><span>Epicurrence<br /></span><span>The Montues/<br /></span><span>Don't miss the action<br /></span><span class="black">Request your invite</span></h2>
-    </div>
-    <div ng-class="{'show-connect': showConnect}" class="main">
-      <div parallax-it="2" class="landing-bg"></div>
-      <h2 class="push-big"><span>epicurrence<br /></span><span>the montues/<br /></span><span>march 6-9, 2016/<br /></span><span>lake tahoe, california<br /></span><span>@ Northstar/<br /></span><span>two full epic days of <br /></span><span>snowboarding/skiing/<br /></span><span>design/development/<br /></span><span>inspiration/collaboration/<br /></span><span>relationships/adventure<br /></span><span class="black">includes lift tickets/<br /></span><span class="black">lodging at request/<br /></span><span class="black">food/drinks/<br /></span><span class="black">and brand new <br /></span><span id="intro_end" class="black">epic conversations</span></h2>
-      <h2 id="ben" class="push-big"><span>Featuring<br /></span><span>rad humans like:<br /></span><span class="black">Ben Cline/<br /></span><span class="black">Co-founder, CD<br /></span><span class="black">@ Rally Interactive/<br /></span><span class="black">Skier</span></h2>
-      <h2 id="marc" class="push-big"><span class="black">Marc Hemeon/<br /></span><span class="black">Head of design<br /></span><span class="black">@ Founder Design Inc./<br /></span><span class="black">Skier</span></h2>
-      <h2 id="ryan_veronica" class="push-big"><span class="black">Ryan Block/<br /></span><span class="black">Co-founder @ Small Wins<br /></span><span class="black">Veronica Belmont/<br /></span><span class="black">Startup Advisor/<br /></span><span class="black">Skiers</span></h2>
-      <h2 id="helena" class="push-big"><span class="black">Helena Price/<br /></span><span class="black">Photographer/<br /></span><span class="black">Skier<br /></span></h2>
-      <h2 id="dan" class="push-big"><span class="black">Dan Mall/<br /></span><span class="black">Creative Director<br /></span><span class="black">@ Superfriendly/<br /></span><span class="black">Snowboarder</span></h2>
-      <h2 id="enrique" class="push-big"><span class="black">Enrique Allen/<br /></span><span class="black">Co-founder<br /></span><span class="black">@ Designer Fund/<br /></span><span class="black">Snowboarder</span></h2>
-      <h2 id="geoff" class="push-big"><span class="black">Geoff Teehan/<br /></span><span class="black">Product Design Director<br /></span><span class="black">@ Facebook/<br /></span><span class="black">Skier</span></h2>
-      <h2 id="mikael_steph" class="push-big"><span class="black">Mikael Cho/<br /></span><span class="black">Steph Liverani/<br /></span><span class="black">Co-founders @ Unsplash/<br /></span><span class="black">Skiers</span></h2>
-      <h2 id="airbnb" class="push-big"><span>Including epic<br /></span><span>teams like:<br /></span><span class="black">Keenan Cummings/Skier<br /></span><span class="black">Nina Vyas/Skier<br /></span><span class="black">Katie Dill/Skier<br /></span><span class="black">@ AirBnB</span></h2>
-      <h2 id="talent" class="push-big"><span>And young<br /></span><span>talent like:<br /></span><span class="black">Alice Lee/Snowboarder<br /></span><span class="black">Jared Erondu/Skier<br /></span><span class="black">Ben Mingo/Skier</span></h2>
-      <h2 id="dann" class="push-big"><span>Brought to you<br /></span><span>by your host:<br /></span><span class="black">Dann Petty<br /></span><span class="black">Snowboarder/<br /></span><span class="black">Freelance designer</span></h2>
-      <h2 id="info"><span>Epicurrence<br /></span><span>The Montues is<br /></span><span class="black">an adventure<br /></span><span class="black">you don’t want to miss</span></h2>
-      <p>Built for epic adventures, it’s now time for Epicurrence to open the flood gates for more to experience. It’s time for a new take on larger conferences and with Epicurrence, we’re calling it The Montues.</p>
-      <p>Located up the mountain at the Ritz Carlton Resort at Northstar in Lake Tahoe California, Epicurrence The Montues guarantees the most epic environment to come and get re-inspired, hang loose with other creatives, and to shred the hill with two full days of snowboarding/skiing.</p>
-      <p>Here's how it will all go down. We’ll arrive on Sunday evening at the Ritz, hang out, and have a discussion together. Monday and Tuesday morning we’ll regroup for breakfast, have another discussion before hitting the slopes for a full day of snowboarding/skiing (lift tickets provided). We’ll warm up back inside over dinner, and then partake in a couple more discussions at night. Check out will be Wednesday morning by noon. It’s the same spirit of the smaller Epicurrence events at larger scale.</p>
-      <p>The Montues was built with teams in mind, although individuals are obviously welcomed. If you are a team of 1, 2, 10, 20, or any size —  bring the whole crew! Treat The Montues as your epic team getaway to reset, and get reinspired.</p>
-      <p>The Montues is by invitation only. However, after you purchase your ticket, you become the curator. Each attendee can invite whomever they want to and as many people as they want until all the spots are gone.</p>
-      <p>For more information follow <a href="https://twitter.com/dannpetty" target="_blank">@dannpetty</a> + <a href="https://twitter.com/Epicurrence" target="_blank">@epicurrence</a> on Twitter. If you have any immediate questions or want to talk about partnerships, please contact <a href="mailto:dann@epicurrence.com">dann@epicurrence.com</a>.</p>
-      <div class="project gallery">
-        <h2><span>My most<br /></span><span>recent<br /></span><span class="black">work</span></h2>
-        <table>
-          <tr>
-            <td>
-              <h4 style="background-image: url('//static1.squarespace.com/static/54cff908e4b00d79e5a0edbe/t/565d150ae4b07ad504d148b1/1448940846929/?format=1000w')" class="gallery"></h4>
-              <p>Project 1</p>
-            </td>
-            <td>
-              <h4 style="background-image: url('//creative-dash.s3.amazonaws.com/hoiland/dO2ktGTIJn.png')" class="gallery"></h4>
-              <p>Project 2</p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <h4 style="background-image: url('//creative-dash.s3.amazonaws.com/hoiland/w4guRV2UF9.png')" class="gallery"></h4>
-              <p>Project 3</p>
-            </td>
-            <td>
-              <h4 style="background-image: url('//creative-dash.s3.amazonaws.com/hoiland/sU14GCFb8B.png')" class="gallery"></h4>
-              <p>Project 4</p>
-            </td>
-          </tr>
-        </table>
-      </div>
+    </section><!-- works -->
 
-  <div class="social-items"><a href="https://twitter.com/katya_alexander" target="_blank" class="icon twitter">Twitter</a><a href="https://www.facebook.com/ekaterina,kostyukova/" target="_blank" class="icon facebook">Facebook</a></div>
+    <section id="teams" class="section teams">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-1.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>EmergentVR</h4>
+                            <h5 class="role">Gear VR Design</h5>
+                            <p>Responsible for the Gear VR interface starting from concept sketches, user & market researach to development, shippment and optimization</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-2.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Timothy Reed</h4>
+                            <h5 class="role">Co-Founder, Developer</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-3.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Victoria Valdez</h4>
+                            <h5 class="role">UI Designer</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="person">
+                        <img src="images/team-4.jpg" alt="" class="img-responsive">
+                        <div class="person-content">
+                            <h4>Beverly Little</h4>
+                            <h5 class="role">Data Scientist</h5>
+                            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        </div>
+                        <ul class="social-icons clearfix">
+                            <li><a href="#" class=""><span class="fa fa-facebook"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-twitter"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-linkedin"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-google-plus"></span></a></li>
+                            <li><a href="#" class=""><span class="fa fa-dribbble"></span></a></li>
+                        </ul>
+                    </div><!-- person -->
+                </div>
+            </div>
+        </div>
+    </section><!-- teams -->
 
-  <script type="text/javascript" src="https://js.stripe.com/v2/stripe.js"></script>
-  <script type="text/javascript">
-    Stripe.setPublishableKey('pk_live_1qgqe4Nu9qsB5qddsb0rKE3j');
-    if (window.location.hash && window.location.hash == '#_=_') {
-        if (window.history && window.history.pushState) {
-            window.history.pushState('', document.title, window.location.pathname);
-        } else {
-            window.location.hash = '';
-        }
-    }
-  </script>
-  <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <section id="testimonials" class="section testimonials no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="col-md-12">
+                                <blockquote>
+                                    <p>"Katya led a team of designers that tested and redesigned WeTravel’s home page and core product. Under Katya’s guidance, the team exceeded our expectations by far. First, they executed an incredibly thorough and insightful user research, efficiently identifying the weak points of our current product design. They then proceeded to rapidly prototyping dozens of versions of our landing page and product design, constantly testing the iterations with real users. The final outcome, a fully redesigned landing page and product, was nothing less than stunning. Initial user feedback is extremely positive and has led to a huge increase in conversion on our site.
 
-    ga('create', 'UA-71406014-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+Katya is an extremely skilled manager, effectively guiding any team and inspiring them to deliver an outstanding product, all while being thoughtful and considerable.
+She displays a great intuition for product strategy and has a strong sense of design all while never neglecting to test any design with real users. She finds just the right balance between business, design and customer needs.
+
+During our project, she successfully navigated the complexities of managing a team of designers, growth practitioners and management stakeholders. She is incredibly driven and equally skilled as a designer as well as a manager. She doesn’t stop until an outcome is optimal, all while always respecting deadlines. She is incredibly easy to work with, because she can work with great autonomy but will still consult management at the critical junctions of a project. It was a true pleasure to have her lead our project team and I can not recommend her highly enough.
+Johannes Koppel, CEO/ Co-Founder at wetravel.to"
+                                    </p>
+                                    <cite class="author">Susan Sims, Interaction Designer at XYZ</cite>
+                                </blockquote>
+                            </div>
+                        </li>
+                        <li>
+
+                            <div class="col-md-12">
+                                <blockquote>
+                                    <p>"Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur...."
+                                    </p>
+                                    <cite class="author">Susan Sims, Interaction Designer at XYZ</cite>
+                                </blockquote>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- flexslider -->
+            </div>
+        </div>
+    </section><!-- testimonials -->
+
+
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                      <ul class="footer-share">
+                        <li><a href="https://www.linkedin.com/in/katyakostyukova"><i class="fa fa-linkedin"></i></a></li>
+
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- footer top -->
+
+    </footer><!-- footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-XXXX-X');
+        ga('send', 'pageview');
+    </script>
 </body>
+</html>
