@@ -363,15 +363,15 @@ ul li {
     transform: translate3d(0, 0, 0); }
 
 /* ==========================================================================
-	$Teams
+	$B-sides
 ========================================================================== */
-.person {
+.project {
   max-width: 270px; }
-  .person-content {
+  .project-content {
     margin-top: 20px; }
-  .person h4 {
+  .project h4 {
     font-weight: 400; }
-  .person h5 {
+  .project h5 {
     color: #e84545;
     font-size: 13px;
     font-weight: 400;
@@ -403,7 +403,7 @@ ul li {
 	$Testimonials
 ========================================================================== */
 .testimonials {
-  background-color: #353A4D;
+  background-color: #3a3e64;
   position: relative; }
   .testimonials blockquote {
     border: 0;
@@ -421,17 +421,7 @@ ul li {
     margin-top: 30px;
     text-transform: uppercase; }
 
-/* ==========================================================================
-	$Download
-========================================================================== */
-.download h3 {
-  margin-top: 0; }
-.download p {
-  color: #2d3033;
-  font-weight: 600;
-  text-transform: uppercase; }
-.download .btn {
-  margin-top: 30px; }
+
 
 /* ==========================================================================
 	$Footer
@@ -439,7 +429,7 @@ ul li {
 .footer {
   text-align: center; }
   .footer-top {
-    background-color: #3a3e64;
+    background-color: #292c47;
     padding-top: 50px; }
   .footer-bottom {
     background-color: #313454;
